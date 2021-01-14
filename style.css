@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 10vh;
+  font-size: 64px;
+  font-weight: bold;
+  left: 100px;
+  color: #feffff;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #def2f1;
+  color: #17252a;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#navbar .nav-link {
+  padding: 30px;
+}
+
+main {
+  background-color: #def2f1;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #3aafa9;
+  color: #17252a;
+  padding: 0 10% 0 20px;
+  overflow: scroll;
+}
+
+#welcome-tile {
+  display: flex;
+  align-items: center;
+}
+#welcome-tile p {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+#welcome-tile #profile-pic {
+  max-width: 20%;
+  height: auto;
+  padding: 20px 50px;
+}
+.project-tile-type {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: space-between;
+}
+#welcome-section,
+#projects,
+#contact {
+  padding: 20px 10% 20px 10%;
+}
+.project-tile {
+  width: 33%;
+  margin: 10px;
+  color: #feffff;
+  background-color: #17252a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-tile p {
+  text-align: center;
+  justify-content: center;
+  margin: 0 0;
+  font-size: inherit;
+}
+.project-img {
+  object-fit: cover;
+  object-position: 45% 0;
+  width: 100%;
+  height: 80%;
+}
+
+#contact {
+  background-color: #3aafa9;
+  padding-bottom: 100px;
+}
+
+#contact #links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  #welcome-tile,
+  .project-tile-type {
+    flex-direction: column;
+  }
+  .project-tile {
+    width: 100%;
+  }
+}
+
+#anchor-projects {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
